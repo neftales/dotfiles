@@ -1,3 +1,4 @@
+set mouse=a
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -16,7 +17,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-sensible'
 Plugin 'valloric/YouCompleteMe'
-
+Plugin 'mxw/vim-jsx'
 " Colorschemes
 Plugin 'chriskempson/base16-vim'
 
@@ -83,3 +84,19 @@ set completeopt-=preview
 """"""""""""""""""""""""""""""""""
 map <F3> :NERDTreeToggle<CR><CR>
 
+"""""""""""""""""""""""""""""""""
+" Show whitespace
+"""""""""""""""""""""""""""""""""
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
+autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhitespace /\s\+$/
+autocmd BufWinLeave * call clearmatches()
+"""""""""""""""""""""""""""""""""
+" Remove whitespace
+"""""""""""""""""""""""""""""""""
+function! TrimWhiteSpace()
+  %s/\s\+$//e
+endfunction
+autocmd BufWritePre *.js :call TrimWhiteSpace()
