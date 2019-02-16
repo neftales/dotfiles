@@ -1,0 +1,27 @@
+{
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-n>": false
+    },
+    "window.zoomLevel": 0,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.autoSave": "onWindowChange",
+    "workbench.colorTheme": "Dracula",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.rulers": [80, 120],
+    "editor.tabSize": 2,
+    "editor.renderLineHighlight": "gutter",
+    "terminal.integrated.fontSize": 14,
+    "eslint.autoFixOnSave": true,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "breadcrumbs.enabled": true,
+    "editor.parameterHints.enabled": false,
+    "prettier.eslintIntegration": true
+}
