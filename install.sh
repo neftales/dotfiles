@@ -1,4 +1,5 @@
 #! /bin/bash
 
-ln -svf %HOME/.dotfiles/git/.gitconfig ~
-ln -svf %HOME/.dotfiles/vim/.vimrc ~
+
+ln -svf ${PWD}/git/.gitconfig ~
+ln -svf ${PWD}/vim/.vimrc ~
