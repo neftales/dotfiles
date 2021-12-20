@@ -30,7 +30,6 @@ SPACESHIP_KUBECTL_VERSION_SHOW=false
 
 
 # asdf
-. $HOME/.asdf/asdf.sh
 . ~/.asdf/plugins/java/set-java-home.zsh # java plugin
 
 # Android
