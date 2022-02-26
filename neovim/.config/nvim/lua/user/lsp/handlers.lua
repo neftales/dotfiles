@@ -83,6 +83,12 @@ local function lsp_keymaps(bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>q", "<cmd>lua vim.diagnostic.setloclist()<CR>", opts)
   vim.cmd [[ command! Format execute 'lua vim.lsp.buf.formatting()' ]]
   vim.api.nvim_buf_set_keymap(bufnr, "n", "cf", "<cmd>Format<CR>", opts)
+  vim.cmd [[
+    augroup format_on_save
+      autocmd!
+      autocmd BufWritePost * Format
+    augroup end
+  ]]
 end
 
 M.on_attach = function(client, bufnr)
