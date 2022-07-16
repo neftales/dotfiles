@@ -72,7 +72,9 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- enable LSP
 	use("williamboman/nvim-lsp-installer") -- simple to use language server installer-- Automatically set up your configuration after cloning packer.nvim
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linter
-	use("mfussenegger/nvim-jdtls") -- java
+
+	-- Java
+	use("mfussenegger/nvim-jdtls")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")
