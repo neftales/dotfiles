@@ -12,7 +12,7 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		formatting.stylua,
-    diagnostics.eslint_d,
-    formatting.eslint_d,
+		diagnostics.eslint_d,
+		formatting.eslint_d,
 	},
 })
