@@ -2,8 +2,9 @@ export PATH=$PATH:$HOME/.local/bin
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="spaceship"
+EDITOR="nvim"
 
-plugins=(git kubectl asdf)
+plugins=(git kubectl asdf aws)
 
 source $ZSH/oh-my-zsh.sh
 
