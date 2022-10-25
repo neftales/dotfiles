@@ -167,3 +167,15 @@ bufferline.setup({
 		},
 	},
 })
+
+local opts = { noremap = true, silent = true }
+vim.api.nvim_set_keymap("n", "<leader>1", "<cmd>lua require('bufferline').go_to_buffer(1, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>2", "<cmd>lua require('bufferline').go_to_buffer(2, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>3", "<cmd>lua require('bufferline').go_to_buffer(3, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>4", "<cmd>lua require('bufferline').go_to_buffer(4, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>5", "<cmd>lua require('bufferline').go_to_buffer(5, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>6", "<cmd>lua require('bufferline').go_to_buffer(6, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>7", "<cmd>lua require('bufferline').go_to_buffer(7, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>8", "<cmd>lua require('bufferline').go_to_buffer(8, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>9", "<cmd>lua require('bufferline').go_to_buffer(9, true)<CR>", opts)
+vim.api.nvim_set_keymap("n", "<leader>$", "<cmd>lua require('bufferline').go_to_buffer(-1, true)<CR>", opts)
