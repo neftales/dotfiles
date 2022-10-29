@@ -53,7 +53,7 @@ return packer.startup(function(use)
 	use("akinsho/toggleterm.nvim")
 
 	-- Colorschemes
-	use("lunarvim/darkplus.nvim")
+	use("catppuccin/nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
