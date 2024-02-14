@@ -16,7 +16,6 @@ SPACESHIP_PROMPT_ORDER=(
   exec_time     # Execution time
   kubectl
   line_sep      # Line break
-  vi_mode       # Vi-mode indicator
   jobs          # Background jobs indicator
   exit_code     # Exit code section
   char          # Prompt character
@@ -32,6 +31,7 @@ SPACESHIP_KUBECTL_VERSION_SHOW=false
 
 # asdf
 . ~/.asdf/plugins/java/set-java-home.zsh # java plugin
+. ~/.asdf/plugins/golang/set-env.zsh
 
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
