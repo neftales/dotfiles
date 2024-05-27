@@ -2,10 +2,11 @@ export PATH=$PATH:$HOME/.local/bin
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="spaceship"
+SPACESHIP_PROMPT_ASYNC=false
 EDITOR="nvim"
 
-plugins=(git kubectl asdf aws)
-
+plugins=(git kubectl kube-ps1 asdf aws)
+PROMPT='$(kube_ps1)'$PROMPT
 source $ZSH/oh-my-zsh.sh
 
 SPACESHIP_PROMPT_ORDER=(
@@ -24,7 +25,8 @@ SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
-SPACESHIP_KUBECONTEXT_SHOW=true
+SSPACESHIP_KUBECTL_CONTEXT_SHOW_NAMESPACE=true
+SPACESHIP_KUBECTL_CONTEXT_SHOW=true
 SPACESHIP_KUBECTL_SHOW=true
 SPACESHIP_KUBECTL_VERSION_SHOW=false
 
