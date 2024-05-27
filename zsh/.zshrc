@@ -36,7 +36,7 @@ SPACESHIP_KUBECTL_VERSION_SHOW=false
 . ~/.asdf/plugins/golang/set-env.zsh
 
 # Secrets
-source ~/.secrets=env.zsh
+source ~/.secrets-env.zsh
 
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
