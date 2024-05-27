@@ -35,6 +35,9 @@ SPACESHIP_KUBECTL_VERSION_SHOW=false
 . ~/.asdf/plugins/java/set-java-home.zsh # java plugin
 . ~/.asdf/plugins/golang/set-env.zsh
 
+# Secrets
+source ~/.secrets-env.zsh
+
 # Android
 export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
